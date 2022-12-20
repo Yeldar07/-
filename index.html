@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        
+        confirm('Хотите ли узнать процент жира в Вашем организме?');
+        let name = prompt('Напишите Ваше имя')
+        let growth = prompt('Введите Ваш рост');
+        let waist = prompt('Введите Вашу окружность талии');
+        let test1 = 'Вы мужчина?';
+
+        let testResult = 0;
+
+        let answer1 = confirm(test1);
+        if (answer1 == true) {
+            let result1 = 64 - (20 * growth / waist);
+            testResult = result1;
+            alert(name + ' Ваш процент жира состовляет ' + result1);
+        }
+
+        let test2 = 'Вы женщина?';
+
+        let answer2 = confirm(test2);
+        if (answer2 == true) {
+            let result2 = 76 - (20 * growth / waist);
+            testResult = result2;
+            alert(name + ' Ваш процент жира состовляет ' + result2);
+        }
+
+    </script>
+</body>
+</html>
